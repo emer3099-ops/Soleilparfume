@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Soleil Parfumerie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="images/logo.jpeg" class="logo">
+  <nav>
+    <a href="#homme">Homme</a>
+    <a href="#femme">Femme</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Soleil Parfumerie</h1>
+  <p>
+    Des parfums naturels, élégants et intemporels.  
+    Inspirés par la nature, créés pour sublimer chaque instant.
+  </p>
+</section>
+
+<!-- HOMME -->
+<section id="homme" class="section">
+  <h2>Parfums Homme</h2>
+  <div class="cards">
+
+    <div class="card parfum-fresh" onclick="goWhatsapp()">
+      <img src="images/homme1.png">
+      <div class="overlay">
+        <p>Un parfum frais et naturel, inspiré par la brise marine.</p>
+        <span>Commander via WhatsApp</span>
+      </div>
+    </div>
+
+    <div class="card parfum-wood" onclick="goWhatsapp()">
+      <img src="images/homme2.png">
+      <div class="overlay">
+        <p>Une fragrance boisée, intense et élégante.</p>
+        <span>Commander via WhatsApp</span>
+      </div>
+    </div>
+
+    <div class="card parfum-oriental" onclick="goWhatsapp()">
+      <img src="images/homme3.png">
+      <div class="overlay">
+        <p>Une essence profonde et chaleureuse au caractère affirmé.</p>
+        <span>Commander via WhatsApp</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEMME -->
+<section id="femme" class="section">
+  <h2>Parfums Femme</h2>
+  <div class="cards">
+
+    <div class="card parfum-floral" onclick="goWhatsapp()">
+      <img src="images/femme1.png">
+      <div class="overlay">
+        <p>Une fragrance florale douce et lumineuse.</p>
+        <span>Commander via WhatsApp</span>
+      </div>
+    </div>
+
+    <div class="card parfum-citrus" onclick="goWhatsapp()">
+      <img src="images/femme2.png">
+      <div class="overlay">
+        <p>Un parfum frais et pétillant aux notes d'agrumes.</p>
+        <span>Commander via WhatsApp</span>
+      </div>
+    </div>
+
+    <div class="card parfum-floral" onclick="goWhatsapp()">
+      <img src="images/femme3.png">
+      <div class="overlay">
+        <p>Une essence féminine enveloppante et élégante.</p>
+        <span>Commander via WhatsApp</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <img src="images/logo.jpeg" class="logo-contact">
+  <h3>Bienvenue mes clients 🌸</h3>
+  <p>Contactez-nous pour toute commande ou information</p>
+  <a href="https://wa.me/21693871353" class="btn">WhatsApp</a>
+  <a href="mailto:contact@soleilparfum.com" class="btn">Email</a>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

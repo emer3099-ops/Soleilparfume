@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  height: 45px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(#ffffff, #f0f0f0);
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 15px auto;
+  color: #666;
+}
+
+/* SECTIONS */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CARDS */
+.card {
+  width: 260px;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+}
+
+.card:hover .overlay,
+.card:active .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay span {
+  margin-top: 15px;
+  background: white;
+  color: #333;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/* COULEURS PAR PARFUM */
+.parfum-fresh .overlay { background: rgba(90,180,170,0.95); }
+.parfum-wood .overlay { background: rgba(120,85,60,0.95); }
+.parfum-oriental .overlay { background: rgba(140,95,150,0.95); }
+.parfum-floral .overlay { background: rgba(215,140,160,0.95); }
+.parfum-citrus .overlay { background: rgba(245,190,90,0.95); }
+
+/* CONTACT */
+.contact {
+  background: #0f3d3e;
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.logo-contact {
+  height: 55px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 30px;
+  background: white;
+  color: #0f3d3e;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 30px; }
+}
